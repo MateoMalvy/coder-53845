@@ -1,0 +1,269 @@
+/**-------------RESET------------**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/**------------HEADER-------------**/
+header {
+    background-color: #E2E2DF;
+    display: flex; justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+header nav ul li a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        font-size: 24px;       
+        margin: 35px; 
+}
+header nav ul{
+    display: flex; justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+header img{
+    width: 200px;
+    height: 180px;
+}
+
+/**--------------BOTON---------------*/
+.boton{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+
+/**------------SECTION1-------------*/
+
+.hero {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background-image: url(../imagen/section-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex; justify-content: center; align-items: center
+}
+
+
+.hero h1 {
+ color: #ffffff;
+ font-size: 70px;
+ border: 3px solid #ffffff;
+}
+/**------------SECTION2-------------*/
+.bienvenido {
+background-color: #E2E2DF;
+display: flex; justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.bienvenido img{
+    width: 130px;
+    height: 130px;
+}
+.bienvenido div{
+    border: 2px #000000 solid;
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+    box-shadow: -3px 10px 38px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: -3px 10px 38px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 10px 38px -7px rgba(0,0,0,0.75);
+}
+
+/**------------SECTION3-------------*/
+.producto{
+    background-color: #E2E2DF;
+    display: flex; justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.producto img{
+    width: 135px;
+    height: 135px;
+}
+.producto div{
+    border: 2px #000000 solid;
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+    box-shadow: -3px 10px 38px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: -3px 10px 38px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 10px 38px -7px rgba(0,0,0,0.75);
+}
+
+
+
+/**--------------FOOTER--------------**/
+footer {
+    background-color: #E2E2DF;
+    display: flex; flex-direction: column;
+    flex-wrap: wrap;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+}
+
+main{
+    background-color: #E2E2DF;
+display: flex; flex-direction: column;
+}
+
+/**--------------NOVEDADES---------**/
+.hero2 {
+    border: 1px #000000 solid;
+    /**HABILITAMOS GRILLA**/
+    display: grid;
+    /**HABILITAMOS FILAS**/
+    grid-template-rows: 1fr;
+    /**HABILITAMOS COLUMNAS**/
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+    box-shadow: -3px 10px 38px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: -3px 10px 38px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 10px 38px -7px rgba(0,0,0,0.75);
+}
+.grid-text{
+    display: grid;
+    grid-template-rows: 100px;
+}
+
+.hero2 img{
+    width: 320px;
+    height: 210px;
+    margin: 7px;
+}
+.hero2 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 30px;      
+ 
+}
+.hero2 p{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;      
+
+}
+
+/**--------------TERMINA NOVEDADES---------**/
+
+/**--------------TIENDA---------**/
+.grid-galeria{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 50px;
+}
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    box-shadow: -3px 10px 38px -32px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 10px 38px -32px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 10px 38px -32px rgba(0,0,0,0.75);
+}
+
+.img-1{
+    grid-row: span 2;
+}
+.img-2{
+    grid-column: span 2;
+}
+.img-3{
+    grid-column: span 2;
+}
+.img-4{
+    grid-row: span 2;
+}
+.img-5{
+    grid-row: span 2;
+}
+.img-6{
+    grid-row: span 2;
+}
+/**--------------TERMINA TIENDA---------**/
+/**--------------TURNO---------**/
+.hero5{
+    background-color: #E2E2DF;
+        color: #000000;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 900;
+        display: flex; justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+
+}
+.bienvenido5 {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background-image: url(../imagen/sa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex; justify-content: center; align-items: center
+}
+.bienvenido5 h5 {
+    color: #ffffff;
+    font-size: 70px;
+    border: 3px solid #ffffff;
+   }
+/**--------------TERMINA TURNO---------**/
+
+/**----------------COMPETICION-----------**/
+.bienvenido4{
+    border: 5px #000000 solid;
+    width: 290px;
+    height: 290px;
+    text-align: center;
+    margin: 30px;
+    display: inline-block;
+}
+.bienvenido4 img{
+    width: 170px;
+    height: 170px;
+}
+.producto4{
+    border: 5px #000000 solid;
+    width: 290px;
+    height: 290px;
+    text-align: center;
+    margin: 30px;
+    display: inline-block;
+}
+.producto4 img{
+    width: 170px;
+    height: 170px;
+}
+/**----------------TERMINA COMPETICION-----------**/
